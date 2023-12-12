@@ -1,7 +1,7 @@
 ### GETTING STARTED
 npm install
 
-node src/app.js
+coverageDirectory=../../../Downloads/ coverageReporters=lcov npm run test
 
 ### Run Docker image command
 
