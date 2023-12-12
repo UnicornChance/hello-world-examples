@@ -1,16 +1,21 @@
 {
-    "name": "nodejs-image-demo",
+    "name": "nodejs",
     "version": "1.0.0",
-    "description": "nodejs image demo",
-    "author": "Sammy the Shark <sammy@example.com>",
-    "license": "MIT",
+    "description": "nodejs ",
     "main": "app.js",
-    "keywords": [
-      "nodejs",
-      "bootstrap",
-      "express"
-    ],
-    "dependencies": {
-      "express": "^4.16.4"
-    }
+    "scripts": {
+      "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
+      "start": "node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+      "express": "^4.17.1",
+      "jest": "^27.1.0"
+  },
+  "devDependencies": {
+      "supertest": "^6.1.6"
   }
+}
