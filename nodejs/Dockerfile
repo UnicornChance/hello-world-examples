@@ -1,17 +1,8 @@
-FROM node:10-alpine
-
-RUN mkdir -p /home/node/app/node_modules && chown -R node:node /home/node/app
-
-WORKDIR /home/node/app
-
-COPY package*.json ./
-
-USER node
-
+FROM node:18.16.0-alpine3.17
+RUN mkdir -p /opt/app
+WORKDIR /opt/app
+COPY package.json package-lock.json .
 RUN npm install
-
-COPY --chown=node:node . .
-
-EXPOSE 8080
-
-CMD [ "node", "app.js" ]
+COPY src/ ./src/
+EXPOSE 3000
+CMD [ "npm", "start"]
