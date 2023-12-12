@@ -2,10 +2,10 @@
     "name": "nodejs",
     "version": "1.0.0",
     "description": "nodejs ",
-    "main": "app.js",
+    "main": "src/app.js",
     "scripts": {
       "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage",
-      "start": "node app.js"
+      "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
