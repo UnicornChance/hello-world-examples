@@ -1,0 +1,8 @@
+mode: set
+goapp/main.go:11.13,17.16 4 0
+goapp/main.go:23.2,24.59 2 0
+goapp/main.go:17.16,20.3 2 0
+goapp/main.go:24.59,26.3 1 0
+goapp/main.go:29.54,31.16 2 1
+goapp/main.go:34.2,34.37 1 1
+goapp/main.go:31.16,33.3 1 1
