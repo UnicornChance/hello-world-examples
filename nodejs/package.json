@@ -4,7 +4,8 @@
     "description": "nodejs ",
     "main": "src/app.js",
     "scripts": {
-      "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage --coverageDirectory=$coverageDirectory --coverageReporters=$coverageReporters",
+      "test": "node --experimental-vm-modules node_modules/.bin/jest",
+      "test:ci": "node --experimental-vm-modules node_modules/.bin/jest --coverage --coverageDirectory=$coverageDirectory --coverageReporters=$coverageReporters",
       "start": "node src/app.js"
   },
   "keywords": [],

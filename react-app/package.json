@@ -13,7 +13,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "CI=true react-scripts test --env=jsdom --coverage --coverageDirectory=$coverageDirectory --coverageReporters=$coverageReporters",
+    "test": "react-scripts test",
+    "test:ci": "CI=true react-scripts test --env=jsdom --coverage --coverageDirectory=$coverageDirectory --coverageReporters=$coverageReporters",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }
