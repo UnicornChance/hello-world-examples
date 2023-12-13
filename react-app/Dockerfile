@@ -1,4 +1,4 @@
-FROM node:18-alpine
+FROM node:18.16.0-alpine3.17
 
 WORKDIR /react-docker-example/
 
@@ -8,4 +8,4 @@ COPY package.json /react-docker-example/
 
 RUN npm install
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]
